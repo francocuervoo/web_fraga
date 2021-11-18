@@ -1,0 +1,130 @@
+/* System Fraga */
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#nav .navbar-brand {
+  margin-left: 1rem;
+}
+
+#nav .navbar-nav {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+#nav .navbar-toggler {
+  border-color: transparent;
+  margin-right: 1rem;
+}
+
+#nav .navbar-toggler-icon {
+  background-image: url("/assets/img/nav/ico-toggler.svg") !important;
+}
+
+#nav .nav-link {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+#nav .iso-logo-nav {
+  width: 2rem;
+}
+
+#nav .ico-message {
+  display: none;
+}
+
+@media (min-width: 991px) {
+  #nav {
+    padding-top: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  #nav .ico-message {
+    display: block;
+    width: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #nav {
+    padding-top: 2rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}
+
+#redes {
+  display: none;
+}
+
+@media (min-width: 1400px) {
+  #redes {
+    display: block;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #redes .redes-img {
+    margin-left: 7rem;
+  }
+  #redes .redes-img img {
+    width: 2rem;
+  }
+  #redes .redes-div {
+    position: absolute;
+    right: 0;
+    display: -ms-grid;
+    display: grid;
+    margin-right: 7rem;
+  }
+  #redes .redes-div img {
+    width: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+#footer {
+  width: auto !important;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  background-image: url("/assets/img/home/footer_responsive.jpg");
+  color: #FFFFFF;
+}
+
+#footer .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
+}
+
+#footer .footer-social a {
+  margin: auto;
+}
+
+#footer .footer-social img {
+  width: 2rem;
+}
+
+#footer .footer-text {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+/*# sourceMappingURL=base.css.map */
