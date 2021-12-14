@@ -1,0 +1,371 @@
+@import "variables";
+
+.div-res {
+  top: 74% !important;
+}
+
+h4 {
+  @media (min-width: $tablet) {
+    font-size: 1.1rem !important;
+    @media (min-width: $desktop) {
+      font-size: 1.3rem !important;
+    }
+  }
+}
+
+#first-category-fragancias {
+  position: relative;
+  .container {
+    .div-post {
+      img {
+        width: 100%;
+      }
+      ul {
+        margin-left: -1rem !important;
+      }
+      .subtitle-li {
+        margin-bottom: 0.4rem;
+      }
+      .subtitle-li,
+      li span {
+        font-size: 1.1rem;
+      }
+      @media (min-width: $tablet) {
+        li {
+          font-size: 0.6rem;
+        }
+        .subtitle-li {
+          margin-bottom: 0.2rem;
+        }
+        .subtitle-li,
+        li span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-top: 10rem;
+      h2,
+      .description-text {
+        margin-bottom: 4rem;
+      }
+
+      .row {
+        img,
+        h4 {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .line-purple {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
+      position: absolute;
+      left: 9rem;
+      top: 11rem;
+    }
+    @media (min-width: $full-desktop) {
+      left: 13.5rem;
+    }
+  }
+}
+
+#second-category-fragancias {
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    .div-post {
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      margin-left: -1rem !important;
+    }
+    .subtitle-li {
+      margin-bottom: 0.4rem;
+    }
+    .subtitle-li,
+    li span {
+      font-size: 1.1rem;
+    }
+    @media (min-width: $tablet) {
+      li {
+        font-size: 0.6rem;
+      }
+      .subtitle-li {
+        margin-bottom: 0.2rem;
+      }
+      .subtitle-li,
+      li span {
+        font-size: 0.9rem;
+      }
+    }
+    @media (min-width: $tablet) {
+      max-width: none;
+      h2,
+      .description-text {
+        margin-bottom: 4rem;
+      }
+
+      .row {
+        img,
+        h4 {
+          margin-bottom: 2rem;
+        }
+        .margin-special-h3 {
+          margin-bottom: 2rem !important;
+        }
+      }
+    }
+  }
+
+  .line-purple2 {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
+      position: absolute;
+      right: 9rem;
+    }
+    @media (min-width: $full-desktop) {
+      right: 13.5rem;
+    }
+  }
+}
+
+#first-category-sabores {
+  position: relative;
+  .container {
+    .div-post {
+      img {
+        width: 100%;
+      }
+      ul {
+        margin-left: -1rem !important;
+      }
+      .subtitle-li {
+        margin-bottom: 0.4rem;
+      }
+      .subtitle-li,
+      li span {
+        font-size: 1.1rem;
+      }
+      @media (min-width: $tablet) {
+        li {
+          font-size: 0.6rem;
+        }
+        .subtitle-li {
+          margin-bottom: 0.2rem;
+        }
+        .subtitle-li,
+        li span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-top: 10rem;
+      h2,
+      .description-text {
+        margin-bottom: 4rem;
+      }
+
+      .row {
+        img,
+        h4 {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  .line-orange {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
+      position: absolute;
+      left: 9rem;
+      top: 11rem;
+    }
+    @media (min-width: $full-desktop) {
+      left: 13.5rem;
+    }
+  }
+}
+
+#second-category-sabores {
+  .container {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    .div-post {
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      margin-left: -1rem !important;
+    }
+    .subtitle-li {
+      margin-bottom: 0.4rem;
+    }
+    .subtitle-li,
+    li span {
+      font-size: 1.1rem;
+    }
+    @media (min-width: $tablet) {
+      li {
+        font-size: 0.6rem;
+      }
+      .subtitle-li {
+        margin-bottom: 0.2rem;
+      }
+      .subtitle-li,
+      li span {
+        font-size: 0.9rem;
+      }
+    }
+    @media (min-width: $tablet) {
+      max-width: none;
+      h2,
+      .description-text {
+        margin-bottom: 4rem;
+      }
+
+      .row {
+        img,
+        h4 {
+          margin-bottom: 2rem;
+        }
+        .margin-special-h3 {
+          margin-bottom: 2rem !important;
+        }
+      }
+    }
+  }
+
+  .line-orange2 {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
+      position: absolute;
+      right: 9rem;
+    }
+    @media (min-width: $full-desktop) {
+      right: 13.5rem;
+    }
+  }
+}
+
+#orange-container {
+  .btn {
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    color: $white;
+    background: transparent;
+    border: 2px solid $white;
+  }
+
+  .link-more {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    .container {
+      max-width: none;
+      position: relative;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+
+      .div-link {
+        position: absolute;
+      }
+    }
+    .div-text {
+      margin-left: 20rem;
+    }
+
+    .link-more {
+      margin-top: -3rem !important;
+    }
+
+    .btn {
+      display: none;
+    }
+    .link-more {
+      display: block;
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: flex;
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+#purple-container {
+  .btn {
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    color: $white;
+    background: transparent;
+    border: 2px solid $white;
+  }
+
+  .link-more {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    .container {
+      max-width: none;
+      position: relative;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+
+      .div-link {
+        position: absolute;
+      }
+    }
+    .div-text {
+      margin-left: 20rem;
+    }
+
+    .link-more {
+      margin-top: -3rem !important;
+    }
+
+    .btn {
+      display: none;
+    }
+    .link-more {
+      display: block;
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: flex;
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

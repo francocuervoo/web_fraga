@@ -1,0 +1,280 @@
+@import "variables";
+
+#carousel {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.div-res {
+  top: 57% !important;
+}
+
+.font-bold {
+  color: $darkGray;
+  font-weight: 700;
+}
+
+.carousel-div-text {
+  //top: 58% !important;
+  @media (min-width: $tablet) {
+    //top: 39% !important;
+    margin-right: 20rem;
+  }
+}
+
+.container-tablet {
+  display: none;
+  @media (min-width: $tablet) {
+    .padding-bot {
+      padding-bottom: 0 !important;
+    }
+    display: block;
+    p {
+      padding-bottom: 2rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+.line-frase {
+  opacity: 0;
+  width: 0;
+  @media (min-width: $desktop) {
+    opacity: 1;
+    width: 1.5rem;
+    position: absolute;
+    left: 9rem;
+    top: 21rem;
+  }
+  @media (min-width: $full-desktop) {
+    left: 13.5rem;
+  }
+}
+
+.line-red {
+  opacity: 0;
+  width: 0;
+  @media (min-width: $desktop) {
+    opacity: 1;
+    width: 0.3rem;
+    position: absolute;
+    right: 9rem;
+    top: 30rem;
+  }
+  @media (min-width: $full-desktop) {
+    right: 14rem;
+  }
+}
+
+.line-red2 {
+  opacity: 0;
+  width: 0;
+  @media (min-width: $desktop) {
+    opacity: 1;
+    width: 0.3rem;
+    position: absolute;
+    left: 9rem;
+    top: 59rem;
+  }
+  @media (min-width: $full-desktop) {
+    left: 14rem;
+  }
+}
+
+#nav {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+#carousel {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+#intro {
+  .image-column {
+    display: none;
+    @media (min-width: $tablet) {
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (min-width: $tablet) {
+    .container {
+      max-width: none;
+    }
+    .col-sm {
+      .description-text {
+        @media (min-width: $full-desktop) {
+          width: 30rem;
+        }
+      }
+    }
+  }
+  .img-full{
+    display: none;
+  }
+  @media (min-width: $tablet) {
+    .img-full {
+      display: block;
+      position: relative;
+      //background-image: url("img/extra/somos_column.jpg");
+      //height: 25rem;
+      img {
+        //position: absolute;
+        width: 100%;
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}
+
+#begin {
+  .btn {
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    color: $red;
+    background: transparent;
+    border: 2px solid $red;
+  }
+
+  .link-more {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    .container {
+      max-width: none;
+      padding-bottom: 4rem;
+    }
+
+    .btn {
+      display: none;
+    }
+    .link-more {
+      display: block;
+      font-weight: 600;
+      color: $red;
+      text-decoration: none;
+      margin-top: 7rem;
+      display: flex;
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+#partner {
+  .img-column-b {
+    display: none;
+  }
+  background-image: url("img/extra/soluciones_responsive.jpg");
+  @media (min-width: $iphone) {
+    background-image: url("img/extra/soluciones.jpg");
+  }
+  .btn {
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    color: $white;
+    background: transparent;
+    border: 2px solid $white;
+  }
+
+  .link-more {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    .container {
+      max-width: none;
+      padding-top: 0;
+      padding-bottom: 4rem;
+
+      .img-column-b {
+        display: block;
+        width: 100%;
+      }
+
+      p {
+        color: $gray;
+      }
+      .p-mayus {
+        color: $red;
+      }
+    }
+    .btn {
+      display: none;
+    }
+    .link-more {
+      display: block;
+      font-weight: 600;
+      color: $red;
+      text-decoration: none;
+      margin-top: 7rem;
+      display: flex;
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+#work {
+  .btn {
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    color: $white;
+    background: transparent;
+    border: 2px solid $white;
+  }
+
+  .link-more {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    .container {
+      max-width: none;
+      position: relative;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+
+      .div-link {
+        position: absolute;
+      }
+    }
+    .div-text {
+      margin-left: 20rem;
+    }
+
+    .link-more {
+      margin-top: -3rem !important;
+    }
+
+    .btn {
+      display: none;
+    }
+    .link-more {
+      display: block;
+      font-weight: 600;
+      color: $white;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: flex;
+      img {
+        width: 3rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

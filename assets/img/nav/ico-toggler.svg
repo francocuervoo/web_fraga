@@ -3,7 +3,14 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 </style>
-<path class="st0" d="M4,7h22 M4,15h22 M4,23h22"/>
+<g>
+	<path class="st0" d="M3.1,6.5c0-0.9,0.8-1.7,1.7-1.7h20.4c0.9,0,1.7,0.8,1.7,1.7c0,0.9-0.8,1.7-1.7,1.7H4.8
+		C3.9,8.2,3.1,7.4,3.1,6.5z"/>
+	<path class="st0" d="M3.1,15c0-0.9,0.8-1.7,1.7-1.7h20.4c0.9,0,1.7,0.8,1.7,1.7c0,0.9-0.8,1.7-1.7,1.7H4.8
+		C3.9,16.7,3.1,15.9,3.1,15z"/>
+	<path class="st0" d="M3.1,23.5c0-0.9,0.8-1.7,1.7-1.7h20.4c0.9,0,1.7,0.8,1.7,1.7c0,0.9-0.8,1.7-1.7,1.7H4.8
+		C3.9,25.2,3.1,24.4,3.1,23.5z"/>
+</g>
 </svg>

@@ -1,0 +1,369 @@
+@import "variables";
+
+.carousel-div-text {
+  //top: 58% !important;
+  @media (min-width: $tablet) {
+    //top: 39% !important;
+    margin-right: 20rem;
+  }
+}
+
+.div-res {
+  top: 57% !important;
+}
+
+.categories-img {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#intro {
+  position: relative;
+  .container {
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-top: 10rem;
+      padding-left: 16rem;
+      padding-right: 16rem;
+      
+      @media (min-width: $desktop) {
+        max-width: none;
+        padding-top: 10rem;
+        padding-left: 20rem;
+        padding-right: 20rem;
+        padding-bottom: 5rem;
+      }
+      @media (min-width: $full-desktop) {
+        padding-left: 24rem;
+        padding-right: 24rem;
+      }
+    }
+  }
+}
+
+#categories {
+  .container {
+    width: auto !important;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-left: 15rem;
+      padding-right: 15rem;
+      padding-bottom: 5rem;
+
+      @media (min-width: $desktop) {
+        padding-left: 19rem;
+        padding-right: 19rem;
+      }
+      @media (min-width: $full-desktop) {
+        padding-left: 23rem;
+        padding-right: 23rem;
+      }
+    }
+  }
+  .div-gestion {
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      @media (min-width: $tablet) {
+        font-size: 1rem;
+      }
+      @media (min-width: $desktop) {
+        font-size: 1.3rem;
+      }
+      color: $gray;
+    }
+    .btn {
+      margin-top: 1rem;
+      font-weight: bold;
+      width: 100%;
+      background: $white;
+      color: $red;
+      border: 2px solid $red;
+    }
+    .link-more {
+      display: none;
+    }
+    @media (min-width: $tablet) {
+      padding-right: 6rem;
+      .btn {
+        display: none;
+      }
+      p {
+        margin-bottom: 4rem;
+      }
+      .link-more {
+        display: block;
+        font-weight: 600;
+        color: $red;
+        text-decoration: none;
+        margin-top: 2rem;
+        display: flex;
+        img {
+          width: 3rem;
+          margin-left: 1rem;
+        }
+        .arrow-red {
+          display: block;
+        }
+      }
+    }
+    @media (min-width: $desktop) {
+      //margin-right: 14rem;
+    }
+  }
+  .div-servicios {
+    margin-bottom: 4rem;
+    h2 {
+      margin-top: 4rem;
+      font-weight: 600;
+      @media (min-width: $tablet) {
+        margin-top: 0rem;
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      @media (min-width: $tablet) {
+        font-size: 1rem;
+      }
+      @media (min-width: $desktop) {
+        font-size: 1.3rem;
+      }      
+      color: $gray;
+    }
+    .btn {
+      margin-top: 1rem;
+      font-weight: bold;
+      width: 100%;
+      background: $white;
+      color: $red;
+      border: 2px solid $red;
+    }
+    .link-more {
+      display: none;
+    }
+    @media (min-width: $tablet) {
+      p {
+        margin-bottom: 4rem;
+      }
+      .btn {
+        display: none;
+      }
+      .link-more {
+        display: block;
+        font-weight: 600;
+        color: $red;
+        text-decoration: none;
+        margin-top: 2rem;
+        display: flex;
+        img {
+          width: 3rem;
+          margin-left: 1rem;
+        }
+        .arrow-red {
+          display: block;
+        }
+      }
+    }
+  }
+  .line-red {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
+      position: absolute;
+      right: 9rem;
+      bottom: -52rem;
+    }
+    @media (min-width: $full-desktop) {
+      right: 13.5rem;
+    }
+  }
+}
+
+#somos {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-image: url("img/about/about_responsive.jpg");
+  @media (min-width: $iphone) {
+    background-image: url("img/about/about.jpeg");
+    background-size: cover;
+  }
+  .div-oculto {
+    display: none;
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      @media (min-width: $tablet) {
+        font-size: 1.3rem;
+      }
+      color: $gray;
+    }
+    .btn {
+      margin-top: 1rem;
+      font-weight: bold;
+      width: 100%;
+      background: $white;
+      color: $red;
+      border: 2px solid $red;
+    }
+    .link-more {
+      display: none;
+    }
+    @media (min-width: $tablet) {
+      display: block;
+      opacity: 0;
+      padding-right: 6rem;
+      .btn {
+        display: none;
+      }
+      p {
+        margin-bottom: 4rem;
+      }
+      .link-more {
+        display: block;
+        font-weight: 600;
+        color: $red;
+        text-decoration: none;
+        margin-top: 2rem;
+        display: flex;
+        img {
+          width: 3rem;
+          margin-left: 1rem;
+        }
+        .arrow-red {
+          display: block;
+        }
+      }
+    }
+    @media (min-width: $desktop) {
+      //margin-right: 14rem;
+    }
+  }
+  .div-somos {
+    margin-bottom: 4rem;
+    h2 {
+      margin-top: 4rem;
+      font-weight: 600;
+      @media (min-width: $tablet) {
+        margin-top: 0rem;
+      }
+    }
+    p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      @media (min-width: $tablet) {
+        font-size: 1rem;
+      }
+      @media (min-width: $desktop) {
+        font-size: 1.3rem;
+      }      
+      color: $gray;
+    }
+    @media (min-width: $tablet) {
+      p {
+        margin-bottom: 4rem;
+      }
+      .btn {
+        display: none;
+      }
+      .link-more {
+        display: block;
+        font-weight: 600;
+        color: $red;
+        text-decoration: none;
+        margin-top: 2rem;
+        display: flex;
+        img {
+          width: 3rem;
+          margin-left: 1rem;
+        }
+        .arrow-red {
+          display: block;
+        }
+      }
+    }
+  }  
+  .container {
+    width: auto !important;
+    margin-right: 0;
+
+    @media (min-width: $tablet) {
+      max-width: none;
+      position: relative;
+
+      .div-somos-text {
+        position: absolute;
+        padding-left: 4rem;
+        padding-right: 6rem;
+
+        .somos-text {
+          padding-top: 2rem;
+          padding-bottom: 3rem;
+        }
+
+        @media (min-width: $tablet) {
+          padding-left: 2rem;
+          padding-right: 10rem;
+        }
+      }
+    }
+  }
+  h2 {
+    font-weight: 600;
+  }
+  .somos-text {
+    font-weight: 300;
+    font-size: 1.1rem;
+    @media (min-width: $tablet) {
+      font-size: 1.3rem;
+    }
+  }
+  .btn {
+    margin-top: 2rem;
+    font-weight: bold;
+    width: 100%;
+    color: $red;
+    background: $whiteImage;
+    border: 2px solid $red;
+  }
+  .link-more {
+    display: none;
+  }
+  @media (min-width: $tablet) {
+    div {
+      top: 10%;
+      @media (min-width: $desktop) {
+        top: 20%;
+      }
+    }
+    .btn {
+      display: none;
+    }
+    .link-more {
+      display: block;
+      font-weight: 600;
+      color: $red;
+      text-decoration: none;
+      margin-top: 2rem;
+      display: flex;
+      img {
+        width: 3rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}

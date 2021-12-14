@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/base.css" />
     <link rel="stylesheet" href="assets/home.css" />
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -25,22 +27,66 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <title>Fragarome - Inicio</title>
+    <script src="./js/app.js"></script>
+
+    <title>Fragarome</title>
   </head>
 
   <body>
     <nav id="nav" class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html"
+      <a class="navbar-brand animated fadeInUp" href="index.html"
         ><img
           class="iso-logo-nav"
           src="assets/img/nav/iso-logo.svg"
+          alt="Iso logo fragarome"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li id="nav-animation" class="nav-item nav-item-animation">
+            <a class="nav-link" href="fragancias.html">FRAGANCIAS</a>
+          </li>
+          <li id="nav-animation" class="nav-item nav-item-animation">
+            <a class="nav-link" href="sabores.html">SABORES</a>
+          </li>
+          <li id="nav-animation" class="nav-item nav-item-animation">
+            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+          </li>
+        </ul>
+        <a
+          id="ico-animation"
+          class="ico-message ico-message-animation navbar-brand"
+          target="_blank"
+          href="mailto:info@fragarome.com.ar"
+          ><img src="assets/img/nav/ico-message.svg" alt="Icono contacto"
+        /></a>
+      </div>
+    </nav>
+
+    <nav id="nav2" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"
+        ><img
+          class="iso-logo-nav"
+          src="assets/img/nav/iso-logo-red.svg"
           alt="Iso logo fragarome"
       /></a>
       <button
@@ -63,48 +109,78 @@
             <a class="nav-link" href="sabores.html">SABORES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="nostros.html">NOSOTROS</a>
+            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
           </li>
         </ul>
-        <a class="ico-message navbar-brand" href="mailto:agregar@mail.com"
-          ><img src="assets/img/nav/ico-message.svg" alt="Icono contacto"
+        <a
+          class="ico-message navbar-brand"
+          target="_blank"
+          href="mailto:info@fragarome.com.ar"
+          ><img src="assets/img/nav/ico-message-red.svg" alt="Icono contacto"
         /></a>
       </div>
     </nav>
 
     <div id="redes" class="redes-nav">
-      <div class="redes-img">
-        <img src="assets/img/logo-horizontal.svg" />
-      </div>
-      <div class="redes-div">
-        <a href="facebook.com" target="_blank"
-          ><img alt="Ícono Facebook" src="assets/img/ico-facebook.svg"
-        /></a>
-        <a href="instagram.com" target="_blank"
-          ><img alt="Ícono Instagram" src="assets/img/ico-instagram.svg"
-        /></a>
-        <a href="linkedin.com" target="_blank"
-          ><img alt="Ícono Linkedin" src="assets/img/ico-linkedin.svg"
-        /></a>
+      <div class="redes-center">
+        <div class="redes-img">
+          <a href="index.html"><img src="assets/img/logo-horizontal.svg" /></a>
+        </div>
+        <div class="redes-div">
+          <a
+            href="https://www.facebook.com/profile.php?id=100069616803103"
+            target="_blank"
+            ><img alt="Ícono Facebook" src="assets/img/ico-facebook.svg"
+          /></a>
+          <a href="https://www.instagram.com/fragarome/" target="_blank"
+            ><img alt="Ícono Instagram" src="assets/img/ico-instagram.svg"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/fragarome-s-a-b52a59180"
+            target="_blank"
+            ><img alt="Ícono Linkedin" src="assets/img/ico-linkedin.svg"
+          /></a>
+        </div>
       </div>
     </div>
 
-    <div id="carousel" class="carousel" data-ride="carousel">
-      <ol class="carousel-indicators">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators padding-t-responsive padding-b-responsive">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
         <li data-target="#carousel" data-slide-to="2"></li>
         <li data-target="#carousel" data-slide-to="3"></li>
-        <li data-target="#carousel" data-slide-to="4"></li>
+        <!--<li data-target="#carousel" data-slide-to="4"></li>-->
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="carousel-div-text">
-            <h1>SENSIBILIDAD<br />SENSORIAL</h1>
-            <h3>
-              para capturar la esencia<br />
-              de los productos.
-            </h3>
+          <div class="carousel-div-text padding-l-r-responsive div-res">
+            <div>
+              <h1>SENSIBILIDAD<br />SENSORIAL</h1>
+              <h3>
+                para capturar la esencia<br />
+                de los productos
+              </h3>
+            </div>
+          </div>
+          <div
+            class="
+              carousel-div-text
+              padding-l-r-responsive
+              div-des
+              d-flex
+              flex-row
+              justify-content-center
+              alig-items-center
+            "
+          >
+            <div id="carousel-anim" class="animation-carousel">
+              <h1>SENSIBILIDAD<br />SENSORIAL</h1>
+              <h3>
+                para capturar la esencia<br />
+                de los productos
+              </h3>
+            </div>
           </div>
           <img
             class="carousel-img"
@@ -118,25 +194,61 @@
           />
         </div>
         <div class="carousel-item">
-          <div class="carousel-div-text">
-            <h1>CALIDAD<br />Y ACOMPAÑAMIENTO</h1>
-            <h3>en todo proceso.</h3>
+          <div class="carousel-div-text padding-l-r-responsive div-res">
+            <div>
+              <h1>CALIDAD Y<br />ACOMPAÑAMIENTO</h1>
+              <h3>en todo proceso</h3>
+            </div>
+          </div>
+          <div
+            class="
+              carousel-div-text
+              padding-l-r-responsive
+              div-des
+              d-flex
+              flex-row
+              justify-content-center
+              alig-items-center
+            "
+          >
+            <div>
+              <h1>CALIDAD Y<br />ACOMPAÑAMIENTO</h1>
+              <h3>en todo proceso</h3>
+            </div>
           </div>
           <img
             class="carousel-img"
             src="assets/img/home/slider_02.jpg"
-            alt="Imagen calidad y acompañamiento"
+            alt="Imagen calidad y acompñamiento"
           />
           <img
             class="carousel-img-responsive"
             src="assets/img/home/slider_02_responsive.jpg"
-            alt="Imagen calidad y acompañamiento"
+            alt="Imagen calidad y acompñamiento"
           />
         </div>
         <div class="carousel-item">
-          <div class="carousel-div-text">
-            <h1>EXPERIENCIA<br />Y VISIÓN</h1>
-            <h3>para desarrollar <br />soluciones sensoriales.</h3>
+          <div class="carousel-div-text padding-l-r-responsive div-res">
+            <div>
+              <h1>EXPERIENCIA<br />Y VISIÓN</h1>
+              <h3>para desarrollar <br />soluciones sensoriales</h3>
+            </div>
+          </div>
+          <div
+            class="
+              carousel-div-text
+              padding-l-r-responsive
+              div-des
+              d-flex
+              flex-row
+              justify-content-center
+              alig-items-center
+            "
+          >
+            <div>
+              <h1>EXPERIENCIA<br />Y VISIÓN</h1>
+              <h3>para desarrollar <br />soluciones sensoriales</h3>
+            </div>
           </div>
           <img
             class="carousel-img"
@@ -150,9 +262,27 @@
           />
         </div>
         <div class="carousel-item">
-          <div class="carousel-div-text">
-            <h1>SOLUCIONES<br />A MEDIDA</h1>
-            <h3>para tus proyectos.</h3>
+          <div class="carousel-div-text padding-l-r-responsive div-res">
+            <div>
+              <h1>SOLUCIONES<br />A MEDIDA</h1>
+              <h3>para tus proyectos</h3>
+            </div>
+          </div>
+          <div
+            class="
+              carousel-div-text
+              padding-l-r-responsive
+              div-des
+              d-flex
+              flex-row
+              justify-content-center
+              alig-items-center
+            "
+          >
+            <div>
+              <h1>SOLUCIONES<br />A MEDIDA</h1>
+              <h3>para tus proyectos</h3>
+            </div>
           </div>
           <img
             class="carousel-img"
@@ -165,45 +295,29 @@
             alt="Imagen soluciones a medida"
           />
         </div>
-        <div class="carousel-item">
-          <div class="carousel-div-text">
-            <h1>SENSIBILIDAD<br />A SENSORIAL</h1>
-            <h3>
-              para capturar la esencia <br />
-              de tus productos.
-            </h3>
-          </div>
-          <img
-            class="carousel-img"
-            src="assets/img/home/slider_05.jpg"
-            alt="Imagen sensibilidad sensorial"
-          />
-          <img
-            class="carousel-img-responsive"
-            src="assets/img/home/slider_05_responsive.jpg"
-            alt="Imagen sensibilidad sensorial"
-          />
-        </div>
       </div>
     </div>
 
-    <div id="categories" class="container">
-      <div class="row">
+    <div id="categories" class="texture">
+      <div class="row container padding-l-r-responsive padding-t-responsive">
         <div class="col-sm div-fragancias">
           <h2 class="categories-title">FRAGANCIAS</h2>
-          <img
-            class="categories-img"
-            alt="Imagen de Fragancias"
-            src="assets/img/home/fragancias.jpg"
-          />
+          <a href="fragancias.html">
+            <img
+              class="categories-img"
+              alt="Imagen de Fragancias"
+              src="assets/img/home/fragancias.png"
+            />
+          </a>
           <h5>Despierta tus sentidos</h5>
           <p class="categories-text">
             Creamos fragancias exclusivas y desarrollamos aromas cotidianos para
             productos de todos los días.
           </p>
-          <a href="/fragancias.html" class="btn btn-primary">VER MÁS</a>
-          <a href="/fragancias.html" class="link-more"
-            >VER MÁS <img class="arrow-gray" src="assets/img/arrow.svg" /><img
+          <a href="fragancias.html" class="btn btn-primary">VER MÁS</a>
+          <a href="fragancias.html" class="link-more"
+            ><span class="hover-underline">VER MÁS</span>
+            <img class="arrow-gray" src="assets/img/arrow.svg" /><img
               class="arrow-purple"
               src="assets/img/arrow-purple.svg"
           /></a>
@@ -211,19 +325,22 @@
 
         <div class="col-sm div-sabores">
           <h2 class="categories-title">SABORES</h2>
-          <img
-            class="categories-img"
-            alt="Imagen de Sabores"
-            src="assets/img/home/sabores.jpg"
-          />
+          <a href="sabores.html">
+            <img
+              class="categories-img"
+              alt="Imagen de Sabores"
+              src="assets/img/home/sabores.png"
+            />
+          </a>
           <h5>Captura la esencia</h5>
-          <p class="categories-text">
+          <p>
             Atentos a la sensibilidad de los sentidos, creamos sabores que le
             dan la identidad a tus productos.
           </p>
-          <a href="/sabores.html" class="btn btn-primary">VER MÁS</a>
-          <a href="/sabores.html" class="link-more"
-            >VER MÁS <img class="arrow-gray" src="assets/img/arrow.svg" /><img
+          <a href="sabores.html" class="btn btn-primary">VER MÁS</a>
+          <a href="sabores.html" class="link-more"
+            ><span class="hover-underline">VER MÁS</span>
+            <img class="arrow-gray" src="assets/img/arrow.svg" /><img
               class="arrow-orange"
               src="assets/img/arrow-orange.svg"
           /></a>
@@ -232,8 +349,14 @@
     </div>
 
     <div id="solutions">
-      <div>
-        <h2 class="solutions-title">SOLUCIONES A MEDIDA</h2>
+      <div
+        class="
+          text-white
+          container
+          padding-l-r-responsive padding-t-responsive padding-b-responsive
+        "
+      >
+        <h2 class="solutions-title">SOLUCIONES<br />A MEDIDA</h2>
         <p class="solutions-text">
           Acompañamos a nuestros clientes en todo el proceso, adaptándonos a sus
           necesidades.
@@ -246,92 +369,165 @@
         <p class="solutions-text">
           ¡Somos el partner estratégico que tu negocio necesita!
         </p>
-        <a href="/soluciones.html" class="btn btn-primary">VER MÁS</a>
-        <a href="/sabores.html" class="link-more"
-          >VER MÁS <img class="arrow-white" src="assets/img/arrow-white.svg"
+        <a href="servicios.html" class="btn btn-primary">VER MÁS</a>
+        <a href="servicios.html" class="link-more"
+          ><span class="hover-underline">VER MÁS</span
+          ><img class="arrow-white" src="assets/img/arrow-white.svg"
         /></a>
+      </div>
+      <div class="line-white">
+        <img class="" src="assets/img/line-white.svg" />
       </div>
     </div>
 
     <div id="quality">
-      <div class="row">
+      <div
+        class="
+          text-gray
+          row
+          container
+          padding-l-r-responsive padding-t-responsive padding-b-responsive
+        "
+      >
         <div class="col-sm div-image-quality">
-          <img src="assets/img/home/calidad.jpg" alt="Imagen calidad" />
+          <img
+            class="img-calidad"
+            src="assets/img/home/calidad-full.jpg"
+            alt="Imagen calidad"
+          />
+          <img
+            class="img-calidad-r"
+            src="assets/img/home/calidad-responsive.jpg"
+            alt="Imagen calidad"
+          />
         </div>
         <div class="col-sm div-text-quality">
-          <h2 class="quality-title">
-            CALIDAD <br />
-            DE PUNTA A PUNTA
-          </h2>
-          <p class="quality-text">
-            Valoramos la calidad en todas las instancias del proceso, desde la
-            selección de materias primas hasta la evaluación del producto final,
-            porque sabemos que la calidad es tan importante para nosotros como
-            para vos.
-          </p>
-          <p class="quality-text">
-            Estamos avalados por la
-            <span
-              >Certificación del Sistema de Gestión de Calidad ISO 9001-2015 de
-              IRAM</span
-            >, y somos auditados periódicamente por importantes clientes líderes
-            en el mercado.
-          </p>
-          <div class="quality-img">
-            <img src="assets/img/home/ico-iso.svg" alt="Imagen logo ISO" />
-            <img
-              src="assets/img/home/ico-kosher.svg"
-              alt="Imagen logo Kosher"
-            />
-            <img src="assets/img/home/ico-haccp.svg" alt="Imagen logo Haccp" />
-            <img src="assets/img/home/ico-gmp.svg" alt="Imagen logo gmp" />
+          <div>
+            <h2 class="quality-title">
+              CALIDAD <br />
+              DE PUNTA A PUNTA
+            </h2>
+            <p class="quality-text">
+              Valoramos la calidad en todas las instancias del proceso, desde la
+              selección de materias primas hasta la evaluación del producto
+              final, porque sabemos que la calidad es tan importante para
+              nosotros como para vos.
+            </p>
+            <p class="quality-text">
+              Estamos avalados por la
+              <span
+                >Certificación del Sistema de Gestión de Calidad ISO 9001-2015
+                de IRAM</span
+              >, y somos auditados periódicamente por importantes clientes
+              líderes en el mercado.
+            </p>
+            <div class="quality-img">
+              <a href="gestion.html"><img src="assets/img/home/ico-iso.svg" alt="Imagen logo ISO" /></a>
+              <a href="gestion.html"><img
+                src="assets/img/home/ico-kosher.svg"
+                alt="Imagen logo Kosher"
+              /></a>
+              <a href="gestion.html"><img
+                src="assets/img/home/ico-haccp.svg"
+                alt="Imagen logo Haccp"
+              /></a>
+              <a href="gestion.html"><img src="assets/img/home/ico-gmp.svg" alt="Imagen logo gmp" /></a>
+            </div>
+            <a href="gestion.html" class="btn btn-primary">VER MÁS</a>
+            <a href="gestion.html" class="link-more"
+              ><span class="hover-underline">VER MÁS</span
+              ><img class="arrow-red" src="assets/img/arrow-red.svg"
+            /></a>
           </div>
-          <a href="/calidad.html" class="btn btn-primary">VER MÁS</a>
-          <a href="/calidad.html" class="link-more"
-            >VER MÁS <img class="arrow-red" src="assets/img/arrow-red.svg"
-          /></a>
         </div>
+      </div>
+      <div class="line-red">
+        <img class="" src="assets/img/line-red.svg" />
       </div>
     </div>
 
     <div id="footer">
       <div class="footer-social">
-        <a href="www.facebook.com" target="_blank"
+        <a
+          href="https://www.facebook.com/profile.php?id=100069616803103"
+          target="_blank"
           ><img
             src="assets/img/footer/ico-facebook.svg"
             alt="Imagen ícono facebook"
         /></a>
-        <a href="www.instagram.com" target="_blank"
+        <a href="https://www.instagram.com/fragarome/" target="_blank"
           ><img
             src="assets/img/footer/ico-instagram.svg"
             alt="Imagen ícono instagram"
         /></a>
-        <a href="www.linkedin.com" target="_blank"
+        <a
+          href="https://www.linkedin.com/in/fragarome-s-a-b52a59180"
+          target="_blank"
           ><img
             src="assets/img/footer/ico-linkedin.svg"
             alt="Imagen ícono linkedin"
         /></a>
       </div>
       <div class="footer-text">
-        <p>HABLEMOS, PONETE EN CONTACTO CON NOSOTROS</p>
-        <p>Gral. José Gervacio de Artigas 2338/40, CABA</p>
-        <p>Tel: (54 11) 4581-2548 / 4582-8867</p>
-        <p>info@fragarome.com.ar</p>
+        <p class="footer-text-title">
+          HABLEMOS, PONETE EN CONTACTO CON NOSOTROS
+        </p>
+        <a
+          href="https://www.google.com/maps/place/Gral.+Jos%C3%A9+Gervasio+Artigas+2338,+C1416+CABA/@-34.6055829,-58.481213,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc9e20a185f21:0xf22c222626ef9603!8m2!3d-34.6055829!4d-58.4790243"
+          target="_black"
+          ><p>Gral. José Gervasio de Artigas 2338/40, CABA</p></a
+        >
+        <a href="tel:541145812548"><p>Tel: (54 11) 4581-2548 / 4582-8867</p></a>
+        <a target="_blank" href="mailto:info@fragarome.com.ar"
+          ><p>info@fragarome.com.ar</p></a
+        >
+      </div>
+      <div class="div-home-nosotros">
+        <div class="footer-text-home">
+          <p class="footer-text-title">HOME</p>
+          <a href="fragancias.html"><p>Fragancias</p></a>
+          <a href="sabores.html"><p>Sabores</p></a>
+          <a href="nosotros.html"><p>Nosotros</p></a>
+        </div>
+        <div class="footer-text-nosotros">
+          <p class="footer-text-title">NOSOTROS</p>
+          <a href="gestion.html"><p>Gestión de Calidad</p></a>
+          <a href="servicios.html"><p>Nuestros servicios</p></a>
+        </div>
       </div>
     </div>
   </body>
 
   <script type="text/javascript">
     $(document).ready(function () {
+      $("#nav2").addClass("d-none");
       let width = $(window).width();
       let height = $(window).height();
-
       if (width > 991) {
         $("#carousel").height(height);
         $("#categories").height(height);
         $("#solutions").height(height);
         $("#quality").height(height);
       }
+      var lastScrollTop = 0;
+      $(window).scroll(function () {
+        var currentScroll = $(this).scrollTop();
+
+        if ($(this).scrollTop() < lastScrollTop) {
+          $("#nav2").removeClass("d-none");
+        } else {
+        }
+        if (lastScrollTop < 480) {
+          $("#nav2").addClass("d-none");
+        }
+        lastScrollTop = currentScroll;
+      });
     });
+
+    setTimeout(function () {
+      $("#nav-animation").removeClass("nav-item-animation");
+      $("#ico-animation").removeClass("ico-message-animation");
+      $("#carousel-anim").removeClass("animation-carousel");
+    }, 5000);
   </script>
 </html>

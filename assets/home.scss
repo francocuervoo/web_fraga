@@ -1,100 +1,107 @@
 @import "variables";
 
-#carousel {
-  .carousel-item {
-    .carousel-img {
-      display: none;
-      background-size: cover;
-      background-position: center;
+@media (min-width: $tablet) {
+  @keyframes FadeIn {
+    0% {
+      opacity: 0;
+      -webkit-transition-duration: 1.2s;
+      transition-duration: 0.8s;
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
     }
-    .carousel-img-responsive {
-      display: block;
-      background-size: cover;
-      background-position: center;
-    }
-
-    @media (min-width: $tablet) {
-      .carousel-img {
-        display: block;
-        width: 100%;
-        height: 100vh;
-      }
-      .carousel-img-responsive {
-        display: none;
-      }
-    }
-
-    .carousel-div-text {
-      position: absolute;
-      color: white;
-      top: 50%;
-      margin-top: 4rem;
-      margin-left: 2rem;
-
-      @media (min-width: $tablet) {
-        margin-top: 0;
-        margin-left: 7rem;
-      }
-
-      @media (min-width: $desktop) {
-        margin-top: 0;
-        margin-left: 20rem;
-      }
-
-      h1 {
-        font-weight: 600;
-        font-size: 2rem;
-      }
-
-      h3 {
-        font-size: 1.3rem;
-      }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      pointer-events: auto;
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  .carousel-indicators {
-    right: auto;
-    margin-left: 2rem;
-
-    @media (min-width: $tablet) {
-      margin-left: 7rem;
-      margin-bottom: 4rem;
+  .nav-item-animation,
+  .ico-message-animation,
+  .animation-carousel {
+    animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation-fill-mode: both;
+  }
+  .nav-item-animation {
+    animation-delay: 1.5s;
+  }
+  .ico-message-animation {
+    animation-delay: 2s;
+  }
+  .animation-carousel {
+    animation-delay: 3s;
+  }
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
     }
-
-    @media (min-width: $desktop) {
-      margin-left: 20rem;
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
     }
-
-    li {
-      width: 15px !important;
-      height: 15px !important;
-      border-radius: 2rem !important;
-      border-top: 0px solid transparent !important;
-      border-bottom: 0px solid transparent !important;
-      margin-bottom: 2rem;
+  }
+  @-webkit-keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0);
     }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  .animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+  }
+  .animatedFadeInUp {
+    opacity: 0;
+  }
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
   }
 }
 
 #categories {
-  width: auto !important;
-  margin-top: 4rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-left: 0;
-  padding-right: 0;
+  .container {
+    width: auto !important;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
 
-  @media (min-width: $tablet) {
-    margin-left: 7rem;
-    position: relative;
-
-    .row {
-      position: absolute;
-      top: 15%;
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-left: 15rem;
+      padding-right: 15rem;
+    }
+    @media (min-width: $desktop) {
+      padding-left: 19rem;
+      padding-right: 19rem;
+    }
+    @media (min-width: $full-desktop) {
+      padding-left: 23rem;
+      padding-right: 23rem;
     }
   }
-
-  @media (min-width: $desktop) {
-    margin-left: 20rem;
+  @media (min-width: $tablet) {
+    position: relative;
+    .row {
+      padding-top: 0;
+      position: absolute;
+      top: 10%;
+      @media (min-width: $desktop) {
+        top: 15%;
+      }
+    }
   }
 
   .div-fragancias {
@@ -104,10 +111,16 @@
     }
     img {
       width: 20rem;
-      filter: grayscale(1);
+      @media (min-width: $tablet) {
+        width: 15rem;
+      }
+      @media (min-width: $desktop) {
+        width: 20rem;
+      }
     }
     h5 {
       font-weight: 600;
+      margin-bottom: 2rem;
       margin-top: 1rem;
     }
     p {
@@ -115,8 +128,13 @@
     }
     h5,
     p {
-      font-size: 1.3rem;
       color: $gray;
+      @media (min-width: $tablet) {
+        font-size: 1rem;
+      }
+      @media (min-width: $desktop) {
+        font-size: 1.3rem;
+      }
     }
     .btn {
       margin-top: 1rem;
@@ -130,11 +148,21 @@
       display: none;
     }
     @media (min-width: $tablet) {
+      padding-right: 6rem;
       h2 {
         color: $gray;
       }
       .btn {
         display: none;
+      }
+      p {
+        margin-bottom: 0rem;
+        @media (min-width: $desktop) {
+          margin-bottom: 4rem;
+        }
+      }
+      img {
+        filter: grayscale(1);
       }
       .link-more {
         display: block;
@@ -146,6 +174,7 @@
         img {
           width: 3rem;
           margin-left: 1rem;
+          filter: grayscale(1);
         }
         .arrow-gray {
           display: block;
@@ -173,13 +202,15 @@
         }
       }
     }
-    @media (min-width: $desktop) {
-      margin-right: 14rem;
+    @media (min-width: $full-desktop) {
+      p {
+        padding-right: 5rem;
+      }
     }
   }
 
   .div-sabores {
-    margin-bottom: 4rem;
+    margin-bottom: rem;
     h2 {
       margin-top: 4rem;
       color: $orange;
@@ -190,19 +221,30 @@
     }
     img {
       width: 20rem;
-      filter: grayscale(1);
+      @media (min-width: $tablet) {
+        width: 15rem;
+      }
+      @media (min-width: $desktop) {
+        width: 20rem;
+      }
     }
     h5 {
       font-weight: 600;
       margin-top: 1rem;
+      margin-bottom: 2rem;
     }
     p {
       font-weight: 300;
     }
     h5,
     p {
-      font-size: 1.3rem;
       color: $gray;
+      @media (min-width: $tablet) {
+        font-size: 1rem;
+      }
+      @media (min-width: $desktop) {
+        font-size: 1.3rem;
+      }
     }
     .btn {
       margin-top: 1rem;
@@ -216,11 +258,20 @@
       display: none;
     }
     @media (min-width: $tablet) {
+      p {
+        margin-bottom: 0rem;
+        @media (min-width: $desktop) {
+          margin-bottom: 4rem;
+        }
+      }
       h2 {
         color: $gray;
       }
       .btn {
         display: none;
+      }
+      img {
+        filter: grayscale(1);
       }
       .link-more {
         display: block;
@@ -232,6 +283,7 @@
         img {
           width: 3rem;
           margin-left: 1rem;
+          filter: grayscale(1);
         }
         .arrow-gray {
           display: block;
@@ -258,17 +310,33 @@
         }
       }
     }
+    @media (min-width: $full-desktop) {
+      p {
+        padding-right: 5rem;
+      }
+    }
   }
 }
 
 #solutions {
-  width: auto !important;
-  padding-top: 4rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 4rem;
-  background-image: url("/assets/img/home/soluciones_responsive.jpg");
-  color: $white;
+  background-image: url("img/home/soluciones_responsive.jpg");
+  @media (min-width: $iphone) {
+    background-image: url("img/home/soluciones_tablet.jpg");
+    @media (min-width: $desktop) {
+      background-image: url("img/home/soluciones.jpg");
+    }
+  }
+
+  .container {
+    width: auto !important;
+    margin-right: 0;
+    margin-left: 0;
+
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-top: 0;
+    }
+  }
 
   h2 {
     font-weight: 600;
@@ -277,7 +345,13 @@
 
   .solutions-text {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    @media (min-width: $tablet) {
+      font-size: 1rem;
+    }
+    @media (min-width: $desktop) {
+      font-size: 1.3rem;
+    }
   }
 
   .btn {
@@ -285,7 +359,7 @@
     font-weight: bold;
     width: 100%;
     color: $white;
-    background: transparent;
+    background: $whiteImage;
     border: 2px solid $white;
   }
 
@@ -294,19 +368,17 @@
   }
 
   @media (min-width: $tablet) {
-    background-image: url("/assets/img/home/soluciones.jpg");
     position: relative;
+    .container {
+      width: 45rem !important;
+      padding-right: 0;
+      @media (min-width: $tablet) {
+        width: 48rem !important;
+      }
+    }
     div {
-      width: 50%;
       top: 20%;
       position: absolute;
-    }
-    h2 {
-      margin-top: 7rem;
-      margin-left: 7rem;
-    }
-    .solutions-text {
-      margin-left: 7rem;
     }
     .btn {
       display: none;
@@ -317,7 +389,6 @@
       color: $white;
       text-decoration: none;
       margin-top: 2rem;
-      margin-left: 7rem;
       display: flex;
       img {
         width: 3rem;
@@ -325,26 +396,43 @@
       }
     }
   }
-  @media (min-width: $desktop) {
-    h2 {
-      margin-left: 18rem;
+
+  .line-white {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
+      position: absolute;
+      right: 9rem;
+      margin-top: -3rem;
     }
-    .solutions-text {
-      margin-left: 18rem;
-    }
-    .link-more {
-      margin-left: 18rem;
+    @media (min-width: $full-desktop) {
+      right: 13.5rem;
     }
   }
 }
 
 #quality {
-  width: auto !important;
-  margin-top: 4rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 4rem;
-  color: $gray;
+  .container {
+    width: auto !important;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    @media (min-width: $tablet) {
+      max-width: none;
+      padding-left: 10rem;
+    }
+    @media (min-width: $desktop) {
+      max-width: none;
+      padding-left: 8rem;
+    }
+    @media (min-width: $full-desktop) {
+      padding-left: 12rem;
+    }
+  }
 
   .div-image-quality {
     display: none;
@@ -353,10 +441,20 @@
   h2 {
     font-weight: 600;
     margin-bottom: 3rem;
+    @media (min-width: $tablet) {
+      margin-bottom: 1rem;
+    }
+    @media (min-width: $desktop) {
+      margin-bottom: 3rem;
+    }
+    color: $red;
   }
   .quality-text {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    @media (min-width: $desktop) {
+      font-size: 1.3rem;
+    }
     span {
       color: $darkGray;
       font-weight: 700;
@@ -364,11 +462,22 @@
   }
   .quality-img {
     display: flex;
-    width: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    @media (min-width: $tablet) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media (min-width: $desktop) {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
     img {
       margin-right: 1rem;
+      width: 3rem;
+    }
+    @media (min-width: $full-desktop) {
+      padding-left: 0 !important;
     }
   }
   .btn {
@@ -385,23 +494,46 @@
   }
 
   @media (min-width: $tablet) {
-    margin-left: 7rem;
     position: relative;
-
     .row {
       position: absolute;
-      top: 15%;
+      top: 12%;
+      padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
       .div-image-quality {
         display: block;
+        width: 50%;
         img {
-          width: 90%;
+          width: 85%;
+          padding-right: 2rem;
+        }
+      }
+      .img-calidad {
+        opacity: 0;
+        width: 0 !important;
+        @media (min-width: $desktop) {
+          opacity: 1 !important;
+          width: 85% !important;
+        }
+      }
+
+      @media (min-width: $desktop) {
+        .img-calidad-r {
+          opacity: 0 !important;
+          width: 0 !important;
         }
       }
 
       .div-text-quality {
-        margin-right: 5rem;
-        h2 {
-          color: $red;
+        width: 50%;
+        margin-right: 8rem;
+        //padding-right: 11rem;
+        @media (min-width: $desktop) {
+          div {
+            padding-right: 4rem;
+            width: 75%;
+          }
         }
       }
 
@@ -414,7 +546,7 @@
         font-weight: 600;
         color: $red;
         text-decoration: none;
-        margin-top: 4rem;
+        margin-top: 3rem;
         display: flex;
         img {
           width: 3rem;
@@ -424,24 +556,18 @@
     }
   }
 
-  @media (min-width: $desktop) {
-    margin-left: 20rem;
-    .row {
+  .line-red {
+    opacity: 0;
+    width: 0;
+    @media (min-width: $desktop) {
+      opacity: 1;
+      width: 0.3rem;
       position: absolute;
-      top: 15%;
-      .div-image-quality {
-        display: block;
-        img {
-          width: 70%;
-        }
-      }
-      .div-text-quality {
-        margin-right: 20rem;
-      }
-      .btn {
-        display: none;
-      }
+      right: 9rem;
+      bottom: 15rem;
+    }
+    @media (min-width: $full-desktop) {
+      right: 13.5rem;
     }
   }
-
 }

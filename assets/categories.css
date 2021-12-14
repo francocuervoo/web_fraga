@@ -1,0 +1,397 @@
+/* System Fraga */
+.div-res {
+  top: 74% !important;
+}
+
+@media (min-width: 991px) {
+  h4 {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media (min-width: 991px) and (min-width: 1460px) {
+  h4 {
+    font-size: 1.3rem !important;
+  }
+}
+
+#first-category-fragancias {
+  position: relative;
+}
+
+#first-category-fragancias .container .div-post img {
+  width: 100%;
+}
+
+#first-category-fragancias .container .div-post ul {
+  margin-left: -1rem !important;
+}
+
+#first-category-fragancias .container .div-post .subtitle-li {
+  margin-bottom: 0.4rem;
+}
+
+#first-category-fragancias .container .div-post .subtitle-li,
+#first-category-fragancias .container .div-post li span {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 991px) {
+  #first-category-fragancias .container .div-post li {
+    font-size: 0.6rem;
+  }
+  #first-category-fragancias .container .div-post .subtitle-li {
+    margin-bottom: 0.2rem;
+  }
+  #first-category-fragancias .container .div-post .subtitle-li,
+  #first-category-fragancias .container .div-post li span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 991px) {
+  #first-category-fragancias .container {
+    max-width: none;
+    padding-top: 10rem;
+  }
+  #first-category-fragancias .container h2,
+  #first-category-fragancias .container .description-text {
+    margin-bottom: 4rem;
+  }
+  #first-category-fragancias .container .row img,
+  #first-category-fragancias .container .row h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+#first-category-fragancias .line-purple {
+  opacity: 0;
+  width: 0;
+}
+
+@media (min-width: 1460px) {
+  #first-category-fragancias .line-purple {
+    opacity: 1;
+    width: 0.3rem;
+    position: absolute;
+    left: 9rem;
+    top: 11rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  #first-category-fragancias .line-purple {
+    left: 13.5rem;
+  }
+}
+
+#second-category-fragancias .container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+#second-category-fragancias .container .div-post img {
+  width: 100%;
+}
+
+#second-category-fragancias .container ul {
+  margin-left: -1rem !important;
+}
+
+#second-category-fragancias .container .subtitle-li {
+  margin-bottom: 0.4rem;
+}
+
+#second-category-fragancias .container .subtitle-li,
+#second-category-fragancias .container li span {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 991px) {
+  #second-category-fragancias .container li {
+    font-size: 0.6rem;
+  }
+  #second-category-fragancias .container .subtitle-li {
+    margin-bottom: 0.2rem;
+  }
+  #second-category-fragancias .container .subtitle-li,
+  #second-category-fragancias .container li span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 991px) {
+  #second-category-fragancias .container {
+    max-width: none;
+  }
+  #second-category-fragancias .container h2,
+  #second-category-fragancias .container .description-text {
+    margin-bottom: 4rem;
+  }
+  #second-category-fragancias .container .row img,
+  #second-category-fragancias .container .row h4 {
+    margin-bottom: 2rem;
+  }
+  #second-category-fragancias .container .row .margin-special-h3 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+#second-category-fragancias .line-purple2 {
+  opacity: 0;
+  width: 0;
+}
+
+@media (min-width: 1460px) {
+  #second-category-fragancias .line-purple2 {
+    opacity: 1;
+    width: 0.3rem;
+    position: absolute;
+    right: 9rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  #second-category-fragancias .line-purple2 {
+    right: 13.5rem;
+  }
+}
+
+#first-category-sabores {
+  position: relative;
+}
+
+#first-category-sabores .container .div-post img {
+  width: 100%;
+}
+
+#first-category-sabores .container .div-post ul {
+  margin-left: -1rem !important;
+}
+
+#first-category-sabores .container .div-post .subtitle-li {
+  margin-bottom: 0.4rem;
+}
+
+#first-category-sabores .container .div-post .subtitle-li,
+#first-category-sabores .container .div-post li span {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 991px) {
+  #first-category-sabores .container .div-post li {
+    font-size: 0.6rem;
+  }
+  #first-category-sabores .container .div-post .subtitle-li {
+    margin-bottom: 0.2rem;
+  }
+  #first-category-sabores .container .div-post .subtitle-li,
+  #first-category-sabores .container .div-post li span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 991px) {
+  #first-category-sabores .container {
+    max-width: none;
+    padding-top: 10rem;
+  }
+  #first-category-sabores .container h2,
+  #first-category-sabores .container .description-text {
+    margin-bottom: 4rem;
+  }
+  #first-category-sabores .container .row img,
+  #first-category-sabores .container .row h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+#first-category-sabores .line-orange {
+  opacity: 0;
+  width: 0;
+}
+
+@media (min-width: 1460px) {
+  #first-category-sabores .line-orange {
+    opacity: 1;
+    width: 0.3rem;
+    position: absolute;
+    left: 9rem;
+    top: 11rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  #first-category-sabores .line-orange {
+    left: 13.5rem;
+  }
+}
+
+#second-category-sabores .container {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+#second-category-sabores .container .div-post img {
+  width: 100%;
+}
+
+#second-category-sabores .container ul {
+  margin-left: -1rem !important;
+}
+
+#second-category-sabores .container .subtitle-li {
+  margin-bottom: 0.4rem;
+}
+
+#second-category-sabores .container .subtitle-li,
+#second-category-sabores .container li span {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 991px) {
+  #second-category-sabores .container li {
+    font-size: 0.6rem;
+  }
+  #second-category-sabores .container .subtitle-li {
+    margin-bottom: 0.2rem;
+  }
+  #second-category-sabores .container .subtitle-li,
+  #second-category-sabores .container li span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 991px) {
+  #second-category-sabores .container {
+    max-width: none;
+  }
+  #second-category-sabores .container h2,
+  #second-category-sabores .container .description-text {
+    margin-bottom: 4rem;
+  }
+  #second-category-sabores .container .row img,
+  #second-category-sabores .container .row h4 {
+    margin-bottom: 2rem;
+  }
+  #second-category-sabores .container .row .margin-special-h3 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+#second-category-sabores .line-orange2 {
+  opacity: 0;
+  width: 0;
+}
+
+@media (min-width: 1460px) {
+  #second-category-sabores .line-orange2 {
+    opacity: 1;
+    width: 0.3rem;
+    position: absolute;
+    right: 9rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  #second-category-sabores .line-orange2 {
+    right: 13.5rem;
+  }
+}
+
+#orange-container .btn {
+  margin-top: 2rem;
+  font-weight: bold;
+  width: 100%;
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+}
+
+#orange-container .link-more {
+  display: none;
+}
+
+@media (min-width: 991px) {
+  #orange-container .container {
+    max-width: none;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  #orange-container .container .div-link {
+    position: absolute;
+  }
+  #orange-container .div-text {
+    margin-left: 20rem;
+  }
+  #orange-container .link-more {
+    margin-top: -3rem !important;
+  }
+  #orange-container .btn {
+    display: none;
+  }
+  #orange-container .link-more {
+    display: block;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #orange-container .link-more img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+#purple-container .btn {
+  margin-top: 2rem;
+  font-weight: bold;
+  width: 100%;
+  color: #FFFFFF;
+  background: transparent;
+  border: 2px solid #FFFFFF;
+}
+
+#purple-container .link-more {
+  display: none;
+}
+
+@media (min-width: 991px) {
+  #purple-container .container {
+    max-width: none;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  #purple-container .container .div-link {
+    position: absolute;
+  }
+  #purple-container .div-text {
+    margin-left: 20rem;
+  }
+  #purple-container .link-more {
+    margin-top: -3rem !important;
+  }
+  #purple-container .btn {
+    display: none;
+  }
+  #purple-container .link-more {
+    display: block;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #purple-container .link-more img {
+    width: 3rem;
+    margin-right: 1rem;
+  }
+}
+/*# sourceMappingURL=categories.css.map */
